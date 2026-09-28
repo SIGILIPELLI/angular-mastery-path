@@ -1,0 +1,113 @@
+site_name: Angular Mastery Path
+site_description: A structured course on modern Angular — standalone components, signals, signal forms, routing, resources, SSR, testing and deployment — with code verified against a real build.
+site_url: https://sigilipelli.github.io/angular-mastery-path/
+repo_url: https://github.com/sigilipelli/angular-mastery-path
+repo_name: angular-mastery-path
+
+theme:
+  name: material
+  favicon: assets/favicon.svg
+  custom_dir: docs/overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: red
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: red
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/progress-tracker.css
+
+extra_javascript:
+  - javascripts/progress-tracker.js
+
+nav:
+  - Home: index.md
+  - Privacy Policy: privacy.md
+  - License: license.md
+  - "Level 1 · Entry":
+      - Overview: level-1/index.md
+      - "01 · What Angular Is": level-1/01-what-angular-is.md
+      - "02 · The CLI & Project Structure": level-1/02-cli-project-structure.md
+      - "03 · Components & Templates": level-1/03-components-templates.md
+      - "04 · Signals: signal, computed, effect": level-1/04-signals-basics.md
+      - "05 · Template Control Flow": level-1/05-control-flow.md
+      - "06 · Inputs, Outputs & model()": level-1/06-inputs-outputs-model.md
+      - "07 · Services & Dependency Injection": level-1/07-services-di.md
+      - "08 · Routing Basics": level-1/08-routing-basics.md
+      - "09 · HTTP with HttpClient": level-1/09-httpclient.md
+      - "10 · Project — A Reading List App": level-1/10-project-reading-list.md
+  - "Level 2 · Intermediate":
+      - Overview: level-2/index.md
+      - "01 · Reactive Forms": level-2/01-reactive-forms.md
+      - "02 · Signal Forms": level-2/02-signal-forms.md
+      - "03 · Dependency Injection in Depth": level-2/03-di-in-depth.md
+      - "04 · RxJS for Angular Developers": level-2/04-rxjs-essentials.md
+      - "05 · Signals and RxJS Interop": level-2/05-signals-rxjs-interop.md
+      - "06 · Async Data with resource & httpResource": level-2/06-resource-httpresource.md
+      - "07 · Router in Depth: Guards, Resolvers, Children": level-2/07-router-in-depth.md
+      - "08 · HTTP Interceptors & Error Handling": level-2/08-interceptors-errors.md
+      - "09 · Pipes & Directives": level-2/09-pipes-directives.md
+      - "10 · Project — An Issue Tracker": level-2/10-project-issue-tracker.md
+  - "Level 3 · Advanced":
+      - Overview: level-3/index.md
+      - "01 · Change Detection & Zoneless": level-3/01-change-detection-zoneless.md
+      - "02 · Composition: Projection & Queries": level-3/02-content-projection-queries.md
+      - "03 · State Management with Signals": level-3/03-state-management.md
+      - "04 · Deferrable Views": level-3/04-deferrable-views.md
+      - "05 · Performance": level-3/05-performance.md
+      - "06 · SSR, Prerendering & Hydration": level-3/06-ssr-hydration.md
+      - "07 · Testing with Vitest & TestBed": level-3/07-testing.md
+      - "08 · Accessibility & the CDK": level-3/08-accessibility-cdk.md
+      - "09 · Security": level-3/09-security.md
+      - "10 · Project — A Server-Rendered Product Catalog": level-3/10-project-catalog.md
+  - "Level 4 · Master":
+      - Overview: level-4/index.md
+      - "01 · The Build System & Configurations": level-4/01-build-system.md
+      - "02 · Libraries & Monorepos": level-4/02-libraries-monorepos.md
+      - "03 · Internationalization": level-4/03-i18n.md
+      - "04 · Angular Elements & Micro-Frontends": level-4/04-elements-microfrontends.md
+      - "05 · Upgrading & Migrations": level-4/05-upgrading-migrations.md
+      - "06 · Large-App Architecture": level-4/06-large-app-architecture.md
+      - "07 · Deployment": level-4/07-deployment.md
+      - "08 · Error Handling & Observability": level-4/08-errors-observability.md
+      - "09 · Production Readiness Review": level-4/09-production-readiness.md
+      - "10 · Capstone — A Production Angular App": level-4/10-capstone.md
