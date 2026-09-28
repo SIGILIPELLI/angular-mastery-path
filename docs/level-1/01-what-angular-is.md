@@ -172,7 +172,7 @@ rather than rendering `undefined` in production.
   apps that use it (Level 3, lesson 01).
 - **"It's too heavy for anything."** The production build tree-shakes unused framework
   code. The initial bundle for the Level 1 project app in this course, built with
-  `ng build`, was 261 kB raw / about 73 kB estimated transfer size, and that includes the
+  `ng build`, was 261 kB raw / about 73 kB estimated transfer size (260.99 kB / 73.00 kB exactly), and that includes the
   router and HTTP client. Measure your own app instead of relying on reputation.
 
 ## Exercise

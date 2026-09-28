@@ -137,21 +137,21 @@ that are loaded on demand (lesson 08):
 
 ```text
 Initial chunk files | Names         |  Raw size | Estimated transfer size
-chunk-YEAVOUZW.js   | -             | 160.83 kB |                47.20 kB
-chunk-2BLNMBOE.js   | -             |  95.29 kB |                24.11 kB
-main-LSBGFHN4.js    | main          |   5.37 kB |                 1.88 kB
+chunk-CFBDKLSF.js   | -             | 160.35 kB |                47.02 kB
+chunk-VDKBJWIX.js   | -             |  95.29 kB |                24.11 kB
+main-YHP7CJVG.js    | main          |   5.35 kB |                 1.87 kB
 styles-5INURTSO.css | styles        |   0 bytes |                 0 bytes
 
-                    | Initial total | 261.48 kB |                73.19 kB
+                    | Initial total | 260.99 kB |                73.00 kB
 
 Lazy chunk files    | Names         |  Raw size | Estimated transfer size
-chunk-SFWQEAUE.js   | book-search   |   2.25 kB |                 1.02 kB
-chunk-R3WAKTBP.js   | book-detail   | 878 bytes |               878 bytes
+chunk-ZTOYL6TL.js   | book-search   |   2.25 kB |                 1.03 kB
+chunk-OUVVJBSL.js   | book-detail   | 878 bytes |               878 bytes
 
-Application bundle generation complete. [1.202 seconds]
+Application bundle generation complete. [1.463 seconds]
 ```
 
-The hashes in file names (`main-LSBGFHN4.js`) change whenever content changes, so you
+The hashes in file names (`main-YHP7CJVG.js`) change whenever content changes, so you
 can cache these files forever on a CDN.
 
 ### Generating code
