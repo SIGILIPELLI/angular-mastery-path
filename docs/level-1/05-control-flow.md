@@ -150,6 +150,27 @@ example and the build fails:
 
 That turns "someone added a new status and forgot the UI" into a compile error.
 
+Exhaustiveness relies on TypeScript **narrowing** the switched expression, and a
+function call can't be narrowed. Switching directly on a signal — `@switch (status())`
+with `@default never;` — fails even when every case is covered:
+
+```text
+✘ [ERROR] TS2322: Type 'IssueStatus' is not assignable to type 'never'.
+  Type '"open"' is not assignable to type 'never'.
+```
+
+Read the signal into a `@let` first and switch on that:
+
+```html
+@let s = status();
+@switch (s) {
+  @case ('open') { Open }
+  @case ('in-progress') { In progress }
+  @case ('closed') { Closed }
+  @default never;
+}
+```
+
 ## `@let`
 
 `@let name = expression;` declares a read-only template variable. It is re-evaluated on
