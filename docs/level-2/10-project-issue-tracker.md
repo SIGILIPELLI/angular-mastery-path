@@ -1,5 +1,5 @@
 ---
-description: "Level 2 project: an Angular issue tracker with httpResource lists, query-param filters, signal forms with server errors, interceptors and a canDeactivate guard."
+description: "Level 2 project: an Angular issue tracker with httpResource, URL filters, signal forms with server errors, interceptors and a guard."
 ---
 
 # 10 · Project — An Issue Tracker

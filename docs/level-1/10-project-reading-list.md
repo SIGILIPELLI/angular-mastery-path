@@ -1,5 +1,5 @@
 ---
-description: "Level 1 project: build a routed Angular reading-list app with a signal-based store, localStorage persistence, a model() rating control and Open Library search."
+description: "Level 1 project: a routed Angular reading-list app with a signal store, localStorage, a model() rating control and Open Library search."
 ---
 
 # 10 · Project — A Reading List App

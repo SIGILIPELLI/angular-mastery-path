@@ -1,5 +1,5 @@
 ---
-description: "A production-readiness review for Angular apps: build, performance, security, accessibility, reliability, observability and operations — with an automated audit script."
+description: "A production-readiness review for Angular apps: build, performance, security, accessibility, reliability, with an automated audit script."
 ---
 
 # 09 · Production Readiness Review

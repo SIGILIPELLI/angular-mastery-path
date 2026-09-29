@@ -1,5 +1,5 @@
 ---
-description: "Compose Angular components: single and multi-slot ng-content with fallbacks, template outlets with context, and signal queries viewChild and contentChildren."
+description: "Compose Angular components: ng-content slots with fallbacks, template outlets with context, and signal queries like contentChildren."
 ---
 
 # 02 · Composition: Projection & Queries

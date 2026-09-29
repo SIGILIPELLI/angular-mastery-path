@@ -1,5 +1,5 @@
 ---
-description: "Ship Angular components as standard custom elements with @angular/elements, use them from plain HTML or other frameworks, and weigh micro-frontend approaches honestly."
+description: "Ship Angular components as custom elements with @angular/elements, use them from plain HTML, and weigh micro-frontends honestly."
 ---
 
 # 04 · Angular Elements & Micro-Frontends

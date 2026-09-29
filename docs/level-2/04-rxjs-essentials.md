@@ -1,5 +1,5 @@
 ---
-description: "The RxJS an Angular developer needs: cold vs hot observables, Subjects, map/filter/debounce, switchMap vs mergeMap vs concatMap vs exhaustMap, errors and cleanup."
+description: "RxJS for Angular: cold vs hot observables, Subjects, key operators, and switchMap vs mergeMap vs concatMap vs exhaustMap, verified."
 ---
 
 # 04 · RxJS for Angular Developers

@@ -1,5 +1,5 @@
 ---
-description: "Angular signals from first principles: signal(), set and update, computed() derived state, effect() side effects, untracked reads and the rules behind them."
+description: "Angular signals from first principles: signal(), set and update, computed() derived state, effect() side effects and untracked reads."
 ---
 
 # 04 · Signals: signal, computed, effect

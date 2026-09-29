@@ -1,5 +1,5 @@
 ---
-description: "Level 2 of Angular: reactive and signal forms, DI in depth, RxJS and interop, resources and httpResource, guards and resolvers, interceptors, pipes and directives."
+description: "Level 2 of Angular: reactive and signal forms, DI in depth, RxJS and interop, resources, guards, resolvers, interceptors, pipes and directives."
 ---
 
 # Level 2 · Intermediate <span class="level-badge">Real apps</span>

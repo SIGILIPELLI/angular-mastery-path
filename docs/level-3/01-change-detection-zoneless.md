@@ -1,5 +1,5 @@
 ---
-description: "How Angular 22 decides when to update the DOM: zoneless scheduling, OnPush as the default, the Eager strategy, markForCheck and what does and doesn't trigger a render."
+description: "How Angular 22 decides when to update the DOM: zoneless scheduling, OnPush by default, Eager, markForCheck and what triggers a render."
 ---
 
 # 01 · Change Detection & Zoneless

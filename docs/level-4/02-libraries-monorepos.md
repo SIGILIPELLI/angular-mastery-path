@@ -1,5 +1,5 @@
 ---
-description: "Share Angular code across apps: multi-project workspaces, ng generate library, public API files, building with ng-packagr, the package format, and when to use Nx."
+description: "Share Angular code across apps: workspaces, ng generate library, public APIs, ng-packagr builds, partial compilation and Nx."
 ---
 
 # 02 · Libraries & Monorepos

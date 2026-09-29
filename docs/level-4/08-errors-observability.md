@@ -1,5 +1,5 @@
 ---
-description: "Handle and observe errors in production Angular apps: a custom ErrorHandler, global listeners, @boundary error blocks, navigation errors, chunk-load failures and monitoring."
+description: "Handle and observe errors in production Angular: custom ErrorHandler, global listeners, @boundary, navigation errors and monitoring."
 ---
 
 # 08 · Error Handling & Observability

@@ -1,5 +1,5 @@
 ---
-description: "Angular security in practice: automatic XSS sanitization, the danger of bypassSecurityTrust*, unsafe URLs, XSRF tokens in HttpClient, strict CSP with autoCsp, and secrets."
+description: "Angular security: automatic XSS sanitization, bypassSecurityTrust risks, unsafe URLs, XSRF tokens, strict CSP with autoCsp, and secrets."
 ---
 
 # 09 · Security

@@ -1,5 +1,5 @@
 ---
-description: "Angular server-side rendering in v22: per-route render modes, prerendering with params, hydration, the HTTP transfer cache, response status, allowed hosts and browser-only code."
+description: "Angular SSR in v22: per-route render modes, prerendering, hydration, the HTTP transfer cache, 404 status, allowed hosts, browser-only code."
 ---
 
 # 06 · SSR, Prerendering & Hydration

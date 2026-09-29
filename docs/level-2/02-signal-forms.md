@@ -1,5 +1,5 @@
 ---
-description: "Angular signal forms, stable in v22: form() over a model signal, schema validators, validate() for custom rules, [formField], disabled logic, arrays and submit()."
+description: "Angular signal forms (stable in v22): form() over a model signal, schema validators, validate(), [formField], disabled logic and submit()."
 ---
 
 # 02 · Signal Forms

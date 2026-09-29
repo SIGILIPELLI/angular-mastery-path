@@ -1,5 +1,5 @@
 ---
-description: "Angular Router in depth: child routes and layouts, functional canActivate/canMatch/canDeactivate guards, resolvers, RedirectCommand, redirect functions and route providers."
+description: "Angular Router in depth: child routes, canActivate, canMatch and canDeactivate guards, resolvers, RedirectCommand and route providers."
 ---
 
 # 07 · Router in Depth: Guards, Resolvers, Children

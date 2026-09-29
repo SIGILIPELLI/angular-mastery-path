@@ -1,5 +1,5 @@
 ---
-description: "Angular Router basics: route config, routerLink and routerLinkActive, route params bound to component inputs, redirects, wildcards, titles and lazy loading."
+description: "Angular Router basics: routes, routerLink and routerLinkActive, params bound to inputs, redirects, wildcards, titles and lazy loading."
 ---
 
 # 08 · Routing Basics

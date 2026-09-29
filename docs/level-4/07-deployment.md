@@ -1,5 +1,5 @@
 ---
-description: "Deploy Angular apps: static hosting with base href and SPA fallbacks, cache headers for hashed files, SSR on Node, containers, and a CI pipeline that builds and tests."
+description: "Deploy Angular apps: base href, SPA fallbacks, cache headers for hashed files, SSR on Node, containers and a CI pipeline."
 ---
 
 # 07 · Deployment

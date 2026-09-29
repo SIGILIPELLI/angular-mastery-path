@@ -1,5 +1,5 @@
 ---
-description: "Angular components and templates: @Component metadata, interpolation, property, attribute, class, style and event bindings, template variables and scoped styles."
+description: "Angular components and templates: @Component metadata, interpolation, property, attribute, class, style and event bindings, and scoped styles."
 ---
 
 # 03 · Components & Templates

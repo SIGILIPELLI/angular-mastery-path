@@ -1,5 +1,5 @@
 ---
-description: "Master the Angular build: angular.json targets and configurations, environments with fileReplacements, define constants, dev-server proxying and what production mode changes."
+description: "The Angular build: angular.json targets and configurations, environments, define constants, dev-server proxying and production mode."
 ---
 
 # 01 · The Build System & Configurations

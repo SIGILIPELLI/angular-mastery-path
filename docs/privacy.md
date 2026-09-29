@@ -1,3 +1,7 @@
+---
+description: "Privacy policy for Angular Mastery Path: how Google AdSense and Analytics cookies are used on this free course site and how to opt out."
+---
+
 # Privacy Policy
 
 _Last updated: 2026-07-17_

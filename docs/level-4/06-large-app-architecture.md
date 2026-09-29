@@ -1,5 +1,5 @@
 ---
-description: "Structure large Angular apps: feature-first folders, core/shared/features layers, public APIs per feature, dependency rules you can enforce, and route-level scoping."
+description: "Structure large Angular apps: feature-first folders, core, shared and feature layers, public APIs, enforced dependency rules and scoping."
 ---
 
 # 06 · Large-App Architecture

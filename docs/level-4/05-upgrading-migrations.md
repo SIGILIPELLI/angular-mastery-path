@@ -1,5 +1,5 @@
 ---
-description: "Keep Angular apps current: ng update, the release and support cycle, and the automated migrations to control flow, inject(), signal inputs and outputs — with real results."
+description: "Keep Angular current: ng update, the support cycle, and real results from the control flow, inject(), signal input and output migrations."
 ---
 
 # 05 · Upgrading & Migrations

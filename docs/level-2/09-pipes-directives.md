@@ -1,5 +1,5 @@
 ---
-description: "Angular pipes and directives: built-in formatting pipes with real output, writing a pure custom pipe, attribute directives with host bindings, and hostDirectives."
+description: "Angular pipes and directives: built-in pipes with real output, pure custom pipes, attribute directives, host bindings and hostDirectives."
 ---
 
 # 09 · Pipes & Directives

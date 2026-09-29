@@ -1,5 +1,5 @@
 ---
-description: "Build accessible Angular apps: semantic HTML first, @angular/aria headless tabs with keyboard support, CDK focus trapping, live announcements and focus management."
+description: "Accessible Angular apps: semantic HTML, @angular/aria tabs with keyboard support, CDK focus trapping, live announcements and focus."
 ---
 
 # 08 · Accessibility & the CDK

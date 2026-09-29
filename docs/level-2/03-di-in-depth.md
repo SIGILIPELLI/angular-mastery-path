@@ -1,5 +1,5 @@
 ---
-description: "Angular dependency injection in depth: InjectionToken, useValue/useClass/useFactory/useExisting, multi providers, the injector tree, viewProviders and resolution flags."
+description: "Angular DI in depth: InjectionToken, useValue, useClass, useFactory, useExisting, multi providers, the injector tree and viewProviders."
 ---
 
 # 03 · Dependency Injection in Depth

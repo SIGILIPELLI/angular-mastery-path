@@ -1,5 +1,5 @@
 ---
-description: "Call APIs from Angular with HttpClient: provideHttpClient, typed GET and POST, HttpParams, mapping responses, HttpErrorResponse and testing without a server."
+description: "Call APIs with Angular HttpClient: provideHttpClient, typed GET and POST, HttpParams, response mapping, HttpErrorResponse and testing."
 ---
 
 # 09 · HTTP with HttpClient

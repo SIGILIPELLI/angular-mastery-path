@@ -1,5 +1,5 @@
 ---
-description: "Level 3 of Angular: change detection and zoneless, composition, state management, @defer, performance, SSR and hydration, testing, accessibility and security."
+description: "Level 3 of Angular: zoneless change detection, composition, state, @defer, performance, SSR and hydration, testing, accessibility, security."
 ---
 
 # Level 3 · Advanced <span class="level-badge">Under the hood</span>

@@ -1,5 +1,5 @@
 ---
-description: "Angular HTTP interceptors with HttpInterceptorFn: auth headers, HttpContext opt-outs, loading counters, safe retries with backoff, error mapping and ordering."
+description: "Angular HTTP interceptors: auth headers, HttpContext opt-outs, busy counters, safe retries with backoff, error mapping and ordering."
 ---
 
 # 08 · HTTP Interceptors & Error Handling

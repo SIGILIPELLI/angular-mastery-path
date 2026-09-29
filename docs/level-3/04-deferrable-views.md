@@ -1,5 +1,5 @@
 ---
-description: "Lazy-load parts of an Angular template with @defer: triggers, prefetching, placeholder, loading and error blocks, and the rules that decide what gets split."
+description: "Lazy-load parts of an Angular template with @defer: triggers, prefetching, placeholder, loading and error blocks, and what gets split."
 ---
 
 # 04 · Deferrable Views

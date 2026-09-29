@@ -1,5 +1,5 @@
 ---
-description: "Level 3 project: a server-rendered Angular catalog with prerendered product pages, per-request search, a client-only cart, incremental hydration, SEO and tests."
+description: "Level 3 project: a server-rendered Angular catalog with prerendered pages, per-request search, a client cart, hydration and tests."
 ---
 
 # 10 · Project — A Server-Rendered Product Catalog
