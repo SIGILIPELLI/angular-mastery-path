@@ -132,7 +132,8 @@ With it enabled, `ng build` injected this into the reading-list app's `index.htm
 
 `'strict-dynamic'` plus the hash allows exactly the bootstrap script Angular emitted and
 anything it loads; `'unsafe-inline'` and `https:` are ignored by modern browsers when a
-hash is present and exist only as fallbacks for very old ones. If you serve your own CSP
+hash is present and exist only as fallbacks for very old ones. `autoCsp` only works for client-rendered builds: with SSR enabled, the build failed with
+`Cannot set both SSR and auto-CSP at the same time.` If you serve your own CSP
 header instead (often better, because you can add `report-to` and other directives),
 provide a per-request nonce to Angular with the `ngCspNonce` attribute on the root element
 or the `CSP_NONCE` token so the styles it injects are allowed.

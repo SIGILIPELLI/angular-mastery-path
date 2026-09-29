@@ -101,7 +101,9 @@ const initial = (opts.budgets ?? []).find((b) => b.type === 'initial');
 check(!!initial?.maximumError, 'initial bundle budget has an error limit', initial ? `${initial.maximumWarning} / ${initial.maximumError}` : 'none');
 check(opts.optimization !== false, 'optimization enabled in production');
 check(opts.outputHashing === 'all' || prod.outputHashing === 'all', 'output hashing = all');
-check(!!opts.security?.autoCsp, 'automatic CSP enabled (security.autoCsp)', 'optional; or send your own CSP header');
+const serverTs = join(dir, 'src', 'server.ts');
+const cspHeader = existsSync(serverTs) && readFileSync(serverTs, 'utf8').includes('Content-Security-Policy');
+check(!!opts.security?.autoCsp || cspHeader, 'a Content Security Policy is configured', opts.security?.autoCsp ? 'security.autoCsp' : cspHeader ? 'header set in src/server.ts' : 'none');
 
 // Build output
 const indexPath = join(out, 'index.html');
@@ -131,8 +133,8 @@ const srcFiles = [];
 const grepSrc = (re) => srcFiles.filter((f) => re.test(readFileSync(f, 'utf8'))).map((f) => f.slice(dir.length + 1));
 const bypass = grepSrc(/bypassSecurityTrust/);
 check(bypass.length === 0, 'no bypassSecurityTrust* calls', bypass.join(', '));
-const logs = grepSrc(/console\.log\(/);
-check(logs.length === 0, 'no console.log left in application code', logs.join(', '));
+const logs = grepSrc(/console\.log\(/).filter((f) => f.startsWith('src/app/')); // server.ts may log
+check(logs.length === 0, 'no console.log left in src/app', logs.join(', '));
 const handler = grepSrc(/provide:\s*ErrorHandler/);
 check(handler.length > 0, 'custom ErrorHandler registered');
 const specs = [];
@@ -158,7 +160,7 @@ We ran it against two builds from this course. The plain Level 1 reading-list ap
 ✔ initial bundle budget has an error limit — 500kB / 1MB
 ✔ optimization enabled in production
 ✔ output hashing = all
-✘ automatic CSP enabled (security.autoCsp) — optional; or send your own CSP header
+✘ a Content Security Policy is configured — none
 ✔ all JS file names are content-hashed — 5 files
 ✔ bundles do not link source maps publicly
 ✔ index.html declares a language
@@ -166,7 +168,7 @@ We ran it against two builds from this course. The plain Level 1 reading-list ap
 ✔ index.html has a viewport meta tag
 ✔ total JavaScript on disk — 258.3 kB across 5 files
 ✔ no bypassSecurityTrust* calls
-✔ no console.log left in application code
+✔ no console.log left in src/app
 ✘ custom ErrorHandler registered
 ✔ unit tests exist — 4 spec files
 
@@ -174,7 +176,10 @@ We ran it against two builds from this course. The plain Level 1 reading-list ap
 ```
 
 The copy with lesson 08's error handling and hidden source maps scored `14/15` — the
-`ErrorHandler` check now passed; only the CSP remained. The script exits non-zero on any
+`ErrorHandler` check now passed; only the CSP remained. The Level 4 capstone (next lesson)
+passes all 15. While building the capstone, the first version of this script flagged the
+`console.log` in `src/server.ts` — the SSR server's legitimate startup message — so the
+rule now only looks at `src/app/`. Expect to tune checks like this for your own project. The script exits non-zero on any
 failure, so it can gate a CI job. Two things it deliberately **can't** tell you: whether
 the ErrorHandler actually reaches a monitoring service, and whether the budget is tight
 enough to matter (500 kB is the generated default; our app was around 260 kB). The review
