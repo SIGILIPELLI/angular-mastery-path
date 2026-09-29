@@ -220,6 +220,11 @@ falling back to the SPA's `index.html`.
   with `✘ [ERROR] Invalid define value (must be an entity name or JS literal): 1.4.0`;
   `--define "BUILD_VERSION='2.0.0'"` worked and inlined `"2.0.0"`.
 - **Expecting `environment.production` checks to strip code.** They don't (above).
+- **Defining a constant only on the command line.** We built once with
+  `--define ENABLE_DEBUG=false` and later without it; the second build compiled fine
+  (the `declare const` satisfies TypeScript) but the app crashed on load with
+  `ReferenceError: ENABLE_DEBUG is not defined`. Put every `define` in `angular.json`
+  with a default, and override it in CI.
 - **Measuring performance with `ng serve`** or a development build.
 
 ## Exercise
