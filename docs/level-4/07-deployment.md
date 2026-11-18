@@ -147,8 +147,8 @@ jobs:
 
 Order matters: tests, then the production build (which enforces budgets), then deploy.
 For CI in depth — environments, approvals, preview deployments, rollbacks — see
-[GitHub & Git Mastery Path](https://sigilipelli.github.io/github-mastery-path/) and
-[Docker Mastery Path](https://sigilipelli.github.io/docker-mastery-path/).
+[GitHub & Git Mastery Path](https://learnmasterypath.com/github-mastery-path/) and
+[Docker Mastery Path](https://learnmasterypath.com/docker-mastery-path/).
 
 ## Releasing safely
 

@@ -45,9 +45,9 @@ Three ideas run through the whole level:
   `^22.22.3 || ^24.15.0 || >=26.0.0`; check yours with `node -v`.
 - **TypeScript basics**: classes, interfaces, union types and generics. Angular code is
   TypeScript everywhere. If you need a refresher, work through
-  [TypeScript Mastery Path](https://sigilipelli.github.io/typescript-mastery-path/) first.
+  [TypeScript Mastery Path](https://learnmasterypath.com/typescript-mastery-path/) first.
 - **HTML, CSS and a little JavaScript in the browser** — events, the DOM, `fetch`.
-  [JavaScript Mastery Path](https://sigilipelli.github.io/javascript-mastery-path/) covers
+  [JavaScript Mastery Path](https://learnmasterypath.com/javascript-mastery-path/) covers
   this if you are new to it.
 - A terminal and an editor. No accounts or cloud services are needed anywhere in Levels 1–3.
 

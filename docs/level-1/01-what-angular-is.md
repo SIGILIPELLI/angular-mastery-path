@@ -89,7 +89,7 @@ It is a weaker fit for a small marketing page or a widget embedded in someone el
 site, where a whole framework's conventions are more than you need (though Angular
 Elements, Level 4 lesson 04, covers the embedding case). If you are choosing between
 frameworks, compare the same small app in each — the
-[React Mastery Path](https://sigilipelli.github.io/react-mastery-path/) and this course
+[React Mastery Path](https://learnmasterypath.com/react-mastery-path/) and this course
 build similar projects on purpose.
 
 ## The release cycle

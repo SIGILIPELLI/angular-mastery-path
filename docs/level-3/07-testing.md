@@ -26,7 +26,7 @@ read failures and coverage. Every test below ran against the Level 1 reading-lis
 
 Aim most of your tests at services and components; keep a smaller number of end-to-end
 tests for the flows that make money or would be embarrassing to break. For end-to-end
-testing in depth, see [Playwright Mastery Path](https://sigilipelli.github.io/playwright-mastery-path/).
+testing in depth, see [Playwright Mastery Path](https://learnmasterypath.com/playwright-mastery-path/).
 
 ## Component tests: drive the DOM, assert on the DOM
 
