@@ -1,6 +1,6 @@
 ---
 title: "Free Angular Course: Signals, Signal Forms, SSR, Testing & Deployment"
-description: "Free Angular 22 course: 36 lessons and 4 projects on components, signals, signal forms, resources, routing, SSR, testing, i18n and production deployment."
+description: "Free Angular 22 course: 36 lessons, 3 projects and 1 capstone on components, signals, signal forms, resources, routing, SSR, testing, i18n and production deployment."
 ---
 
 # Angular Mastery Path
