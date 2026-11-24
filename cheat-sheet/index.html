@@ -1,0 +1,4006 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A free Angular cheat sheet: 24 quick-reference tables from every level of the Angular Mastery Path, each linked to its full lesson.">
+      
+      
+      
+        <link rel="canonical" href="https://learnmasterypath.com/angular-mastery-path/cheat-sheet/">
+      
+      
+        <link rel="prev" href="../interview-questions/">
+      
+      
+        <link rel="next" href="../level-1/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+  
+  <title>Angular Cheat Sheet: Quick Reference, Beginner to Advanced</title>
+
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../stylesheets/progress-tracker.css">
+    
+      <link rel="stylesheet" href="../stylesheets/final-quiz.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-05VBGCXN12"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-05VBGCXN12');
+  </script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mastery Path">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Angular Cheat Sheet: Quick Reference, Beginner to Advanced">
+  <meta property="og:description" content="A free Angular cheat sheet: 24 quick-reference tables from every level of the Angular Mastery Path, each linked to its full lesson.">
+  <meta property="og:url" content="https://learnmasterypath.com/angular-mastery-path/cheat-sheet/">
+  <meta property="og:image" content="https://learnmasterypath.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mastery Path: free structured courses, beginner to master">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Angular Cheat Sheet: Quick Reference, Beginner to Advanced">
+  <meta name="twitter:description" content="A free Angular cheat sheet: 24 quick-reference tables from every level of the Angular Mastery Path, each linked to its full lesson.">
+  <meta name="twitter:image" content="https://learnmasterypath.com/og-image.png">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9440969811959397"
+     crossorigin="anonymous"></script><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Mastery Path", "item": "https://learnmasterypath.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Angular Mastery Path", "item": "https://learnmasterypath.com/angular-mastery-path/"},
+      {"@type": "ListItem", "position": 3, "name": "Cheat Sheet", "item": "https://learnmasterypath.com/angular-mastery-path/cheat-sheet/"}
+    ]
+  }
+  </script>
+  <style>
+    .md-banner a:hover { text-decoration: underline !important; }
+    .mp-related { margin-top: 2.4rem; padding-top: 1rem; border-top: 1px solid var(--md-default-fg-color--lightest); font-size: .78rem; }
+    .mp-related h2 { font-size: .9rem; margin: 0 0 .5rem; }
+    .mp-related ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem .9rem; }
+    .mp-related li { margin: 0 !important; }
+  </style>
+  <script type="application/json" id="mp-course-meta">{"home": false, "id": "angular-mastery-path", "name": "Angular Mastery Path", "repo": "https://github.com/sigilipelli/angular-mastery-path", "src": "cheat-sheet.md", "url": "https://learnmasterypath.com/angular-mastery-path/"}</script>
+  <link rel="stylesheet" href="https://learnmasterypath.com/assets/learn.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://learnmasterypath.com/assets/course.css?v=1">
+  <script src="https://learnmasterypath.com/assets/learn.js" defer></script>
+  <script src="https://learnmasterypath.com/assets/signup.js" defer></script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#angular-cheat-sheet" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+  <a href="https://learnmasterypath.com/" style="color: inherit; text-decoration: none;">
+    &larr; Mastery Path &middot; all 100+ free courses
+  </a>
+  <span style="opacity: .6; margin: 0 .6em;">|</span>
+  <a href="https://learnmasterypath.com/search/" style="color: inherit; text-decoration: none;">Search all courses</a>
+  <span style="opacity: .6; margin: 0 .6em;">|</span>
+  <a href="https://learnmasterypath.com/resume/" style="color: inherit; font-weight: 700; text-decoration: none;">
+    Got the skills? Free resume ATS check &rarr;
+  </a>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Angular Mastery Path" class="md-header__button md-logo" aria-label="Angular Mastery Path" data-md-component="logo">
+      <svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Angular Mastery Path
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Angular Cheat Sheet: Quick Reference, Beginner to Advanced
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="deep-purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/sigilipelli/angular-mastery-path" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    angular-mastery-path
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../interview-questions/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Interview Questions
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Cheat Sheet
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 1 · Entry
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-2/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 2 · Intermediate
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-3/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 3 · Advanced
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-4/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 4 · Master
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../quiz/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Final Quiz
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Angular Mastery Path" class="md-nav__button md-logo" aria-label="Angular Mastery Path" data-md-component="logo">
+      <svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg>
+    </a>
+    Angular Mastery Path
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/sigilipelli/angular-mastery-path" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    angular-mastery-path
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interview-questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cheat Sheet
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cheat Sheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#level-1-entry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 1 · Entry
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 1 · Entry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-what-angular-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · What Angular Is
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-the-cli-project-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · The CLI &amp; Project Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-components-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Components &amp; Templates
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-reading-list-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A Reading List App
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-2-intermediate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 2 · Intermediate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 2 · Intermediate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-reactive-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Reactive Forms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-signal-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Signal Forms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-dependency-injection-in-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Dependency Injection in Depth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-rxjs-for-angular-developers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · RxJS for Angular Developers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-signals-and-rxjs-interop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Signals and RxJS Interop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-async-data-with-resource-httpresource" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Async Data with resource &amp; httpResource
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-pipes-directives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Pipes &amp; Directives
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-an-issue-tracker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — An Issue Tracker
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-3-advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 3 · Advanced
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 3 · Advanced">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#02-composition-projection-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Composition: Projection &amp; Queries
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-state-management-with-signals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · State Management with Signals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-deferrable-views" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Deferrable Views
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Performance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-ssr-prerendering-hydration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · SSR, Prerendering &amp; Hydration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-testing-with-vitest-testbed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Testing with Vitest &amp; TestBed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-server-rendered-product-catalog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A Server-Rendered Product Catalog
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-4-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 4 · Master
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 4 · Master">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-the-build-system-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · The Build System &amp; Configurations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-angular-elements-micro-frontends" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Angular Elements &amp; Micro-Frontends
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-upgrading-migrations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Upgrading &amp; Migrations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Deployment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-production-readiness-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Production Readiness Review
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-1/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 1 · Entry
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 1 · Entry
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/01-what-angular-is/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · What Angular Is
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/02-cli-project-structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · The CLI & Project Structure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/03-components-templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Components & Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/04-signals-basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Signals: signal, computed, effect
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/05-control-flow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Template Control Flow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/06-inputs-outputs-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Inputs, Outputs & model()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/07-services-di/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Services & Dependency Injection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/08-routing-basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Routing Basics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/09-httpclient/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · HTTP with HttpClient
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/10-project-reading-list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — A Reading List App
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-2/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 2 · Intermediate
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 2 · Intermediate
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/01-reactive-forms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Reactive Forms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/02-signal-forms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Signal Forms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/03-di-in-depth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Dependency Injection in Depth
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/04-rxjs-essentials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · RxJS for Angular Developers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/05-signals-rxjs-interop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Signals and RxJS Interop
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/06-resource-httpresource/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Async Data with resource & httpResource
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/07-router-in-depth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Router in Depth: Guards, Resolvers, Children
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/08-interceptors-errors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · HTTP Interceptors & Error Handling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/09-pipes-directives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Pipes & Directives
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/10-project-issue-tracker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — An Issue Tracker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-3/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 3 · Advanced
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 3 · Advanced
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/01-change-detection-zoneless/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Change Detection & Zoneless
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/02-content-projection-queries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Composition: Projection & Queries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/03-state-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · State Management with Signals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/04-deferrable-views/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Deferrable Views
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/05-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Performance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/06-ssr-hydration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · SSR, Prerendering & Hydration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/07-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Testing with Vitest & TestBed
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/08-accessibility-cdk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Accessibility & the CDK
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/09-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/10-project-catalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — A Server-Rendered Product Catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-4/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 4 · Master
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 4 · Master
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/01-build-system/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · The Build System & Configurations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/02-libraries-monorepos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Libraries & Monorepos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/03-i18n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Internationalization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/04-elements-microfrontends/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Angular Elements & Micro-Frontends
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/05-upgrading-migrations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Upgrading & Migrations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/06-large-app-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Large-App Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/07-deployment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Deployment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/08-errors-observability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Error Handling & Observability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/09-production-readiness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Production Readiness Review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/10-capstone/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Capstone — A Production Angular App
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quiz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Final Quiz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#level-1-entry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 1 · Entry
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 1 · Entry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-what-angular-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · What Angular Is
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-the-cli-project-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · The CLI &amp; Project Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-components-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Components &amp; Templates
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-reading-list-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A Reading List App
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-2-intermediate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 2 · Intermediate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 2 · Intermediate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-reactive-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Reactive Forms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-signal-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Signal Forms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-dependency-injection-in-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Dependency Injection in Depth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-rxjs-for-angular-developers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · RxJS for Angular Developers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-signals-and-rxjs-interop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Signals and RxJS Interop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-async-data-with-resource-httpresource" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Async Data with resource &amp; httpResource
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-pipes-directives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Pipes &amp; Directives
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-an-issue-tracker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — An Issue Tracker
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-3-advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 3 · Advanced
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 3 · Advanced">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#02-composition-projection-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Composition: Projection &amp; Queries
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-state-management-with-signals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · State Management with Signals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-deferrable-views" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Deferrable Views
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Performance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-ssr-prerendering-hydration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · SSR, Prerendering &amp; Hydration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-testing-with-vitest-testbed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Testing with Vitest &amp; TestBed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-server-rendered-product-catalog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A Server-Rendered Product Catalog
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-4-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 4 · Master
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 4 · Master">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-the-build-system-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · The Build System &amp; Configurations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-angular-elements-micro-frontends" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Angular Elements &amp; Micro-Frontends
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-upgrading-migrations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Upgrading &amp; Migrations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Deployment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-production-readiness-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Production Readiness Review
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+
+
+  
+  
+
+
+<h1 id="angular-cheat-sheet">Angular Cheat Sheet<a class="headerlink" href="#angular-cheat-sheet" title="Permanent link">&para;</a></h1>
+<p>Quick-reference tables from <strong>24 lessons</strong> of the free Angular Mastery Path, in course order from beginner to advanced. Each section links to the full lesson with explanations and runnable examples.</p>
+<h2 id="level-1-entry">Level 1 · Entry<a class="headerlink" href="#level-1-entry" title="Permanent link">&para;</a></h2>
+<h3 id="01-what-angular-is"><a href="../level-1/01-what-angular-is/">01 · What Angular Is</a><a class="headerlink" href="#01-what-angular-is" title="Permanent link">&para;</a></h3>
+<p><em>What is in the box</em></p>
+<table>
+<thead>
+<tr>
+<th>Concern</th>
+<th>What Angular provides</th>
+<th>Package</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UI</td>
+<td>Components, templates, directives, pipes</td>
+<td><code>@angular/core</code>, <code>@angular/common</code></td>
+</tr>
+<tr>
+<td>Reactivity</td>
+<td>Signals (<code>signal</code>, <code>computed</code>, <code>effect</code>, <code>linkedSignal</code>, <code>resource</code>)</td>
+<td><code>@angular/core</code></td>
+</tr>
+<tr>
+<td>Wiring</td>
+<td>Dependency injection (<code>inject()</code>, providers, hierarchical injectors)</td>
+<td><code>@angular/core</code></td>
+</tr>
+<tr>
+<td>Navigation</td>
+<td>Router with lazy loading, guards and resolvers</td>
+<td><code>@angular/router</code></td>
+</tr>
+<tr>
+<td>Forms</td>
+<td>Reactive forms, template-driven forms, and signal forms</td>
+<td><code>@angular/forms</code></td>
+</tr>
+<tr>
+<td>Server calls</td>
+<td><code>HttpClient</code> with interceptors, plus <code>httpResource</code></td>
+<td><code>@angular/common/http</code></td>
+</tr>
+<tr>
+<td>Server rendering</td>
+<td>SSR, prerendering and hydration</td>
+<td><code>@angular/ssr</code></td>
+</tr>
+<tr>
+<td>Tooling</td>
+<td>CLI, dev server, production build (esbuild + Vite), test runner integration</td>
+<td><code>@angular/cli</code>, <code>@angular/build</code></td>
+</tr>
+<tr>
+<td>Extras</td>
+<td>Component Dev Kit, Material components, accessibility primitives, i18n</td>
+<td><code>@angular/cdk</code>, <code>@angular/material</code>, <code>@angular/aria</code>, <code>@angular/localize</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="02-the-cli-project-structure"><a href="../level-1/02-cli-project-structure/">02 · The CLI &amp; Project Structure</a><a class="headerlink" href="#02-the-cli-project-structure" title="Permanent link">&para;</a></h3>
+<p><em>Creating a project</em></p>
+<table>
+<thead>
+<tr>
+<th>Flag</th>
+<th>What it does</th>
+<th>Default in 22</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--style</code></td>
+<td><code>css</code>, <code>scss</code>, <code>sass</code>, <code>less</code> or <code>tailwind</code></td>
+<td><code>css</code></td>
+</tr>
+<tr>
+<td><code>--ssr</code></td>
+<td>Adds server-side rendering and prerendering (Level 3, lesson 06)</td>
+<td>asked</td>
+</tr>
+<tr>
+<td><code>--routing</code></td>
+<td>Generates <code>app.routes.ts</code> and wires the router</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><code>--test-runner</code></td>
+<td><code>vitest</code> or <code>karma</code></td>
+<td><code>vitest</code></td>
+</tr>
+<tr>
+<td><code>--zoneless</code></td>
+<td>App does not load <code>zone.js</code></td>
+<td>yes for new apps</td>
+</tr>
+<tr>
+<td><code>--inline-template</code> / <code>--inline-style</code></td>
+<td>Root component uses <code>template:</code> / <code>styles:</code> instead of separate files</td>
+<td>no</td>
+</tr>
+<tr>
+<td><code>--skip-git</code>, <code>--skip-install</code></td>
+<td>Skip <code>git init</code> / <code>npm install</code></td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
+<h3 id="03-components-templates"><a href="../level-1/03-components-templates/">03 · Components &amp; Templates</a><a class="headerlink" href="#03-components-templates" title="Permanent link">&para;</a></h3>
+<p><em>Anatomy of a component</em></p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>selector</code></td>
+<td>The element name that creates this component (<code>&lt;app-profile-card /&gt;</code>). Prefix with your app's prefix (<code>app-</code> by default) to avoid clashing with real or future HTML elements.</td>
+</tr>
+<tr>
+<td><code>template</code> / <code>templateUrl</code></td>
+<td>Inline template string, or path to an <code>.html</code> file. Use one or the other.</td>
+</tr>
+<tr>
+<td><code>styles</code> / <code>styleUrl</code></td>
+<td>Inline CSS string (or array), or path to a stylesheet.</td>
+</tr>
+<tr>
+<td><code>imports</code></td>
+<td>Components, directives and pipes this template uses.</td>
+</tr>
+<tr>
+<td><code>host</code></td>
+<td>Bindings and listeners on the component's own element (the <code>&lt;app-profile-card&gt;</code> tag).</td>
+</tr>
+<tr>
+<td><code>changeDetection</code></td>
+<td>Change detection strategy — <code>OnPush</code> by default in Angular 22 (Level 3, lesson 01).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="10-project-a-reading-list-app"><a href="../level-1/10-project-reading-list/">10 · Project — A Reading List App</a><a class="headerlink" href="#10-project-a-reading-list-app" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Lesson</th>
+<th>Where it shows up</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>02 CLI</td>
+<td><code>ng new</code>, <code>ng build</code>, <code>ng test</code></td>
+</tr>
+<tr>
+<td>03 Templates</td>
+<td>bindings and events in every component</td>
+</tr>
+<tr>
+<td>04 Signals</td>
+<td>the store's <code>signal</code>, <code>computed</code> and <code>effect</code></td>
+</tr>
+<tr>
+<td>05 Control flow</td>
+<td><code>@for</code> with <code>track</code>, <code>@if</code>/<code>@else</code>, <code>@empty</code></td>
+</tr>
+<tr>
+<td>06 Inputs/outputs</td>
+<td><code>BookCard</code> inputs and outputs, <code>StarRating</code> with <code>model()</code></td>
+</tr>
+<tr>
+<td>07 Services</td>
+<td><code>BookStore</code> and <code>OpenLibrary</code> with <code>@Service()</code></td>
+</tr>
+<tr>
+<td>08 Routing</td>
+<td>list, detail and search routes; <code>:id</code> bound to an input; lazy chunks</td>
+</tr>
+<tr>
+<td>09 HttpClient</td>
+<td>the Open Library search</td>
+</tr>
+</tbody>
+</table>
+<h2 id="level-2-intermediate">Level 2 · Intermediate<a class="headerlink" href="#level-2-intermediate" title="Permanent link">&para;</a></h2>
+<h3 id="01-reactive-forms"><a href="../level-2/01-reactive-forms/">01 · Reactive Forms</a><a class="headerlink" href="#01-reactive-forms" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Model lives in</th>
+<th>Best for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Template-driven</strong> (<code>FormsModule</code>, <code>ngModel</code>)</td>
+<td>The template</td>
+<td>Very small forms; older code</td>
+</tr>
+<tr>
+<td><strong>Reactive</strong> (<code>ReactiveFormsModule</code>)</td>
+<td>A tree of <code>FormControl</code> / <code>FormGroup</code> objects in the class</td>
+<td>Most existing production code; complex dynamic forms</td>
+</tr>
+<tr>
+<td><strong>Signal forms</strong> (<code>@angular/forms/signals</code>)</td>
+<td>A signal holding your data model</td>
+<td>New code in Angular 22+ (next lesson)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="02-signal-forms"><a href="../level-2/02-signal-forms/">02 · Signal Forms</a><a class="headerlink" href="#02-signal-forms" title="Permanent link">&para;</a></h3>
+<p><em>The model is just a signal</em></p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>The field's value (writable — <code>f.username().value.set('ada')</code> updates the model)</td>
+</tr>
+<tr>
+<td><code>errors</code></td>
+<td>Array of <code>{ kind, message? }</code> objects for this field</td>
+</tr>
+<tr>
+<td><code>valid</code> / <code>invalid</code> / <code>pending</code></td>
+<td>Validation status, <code>pending</code> while async rules run</td>
+</tr>
+<tr>
+<td><code>touched</code> / <code>dirty</code></td>
+<td>Interaction state</td>
+</tr>
+<tr>
+<td><code>disabled</code> / <code>readonly</code> / <code>hidden</code></td>
+<td>Computed from your schema rules</td>
+</tr>
+<tr>
+<td><code>required</code>, <code>min</code>, <code>max</code>, <code>minLength</code>, <code>maxLength</code></td>
+<td>Metadata derived from validators, useful for hints and native attributes</td>
+</tr>
+<tr>
+<td><code>submitting</code></td>
+<td>True while a <code>submit()</code> action runs</td>
+</tr>
+</tbody>
+</table>
+<h3 id="03-dependency-injection-in-depth"><a href="../level-2/03-di-in-depth/">03 · Dependency Injection in Depth</a><a class="headerlink" href="#03-dependency-injection-in-depth" title="Permanent link">&para;</a></h3>
+<p><em>Resolution options</em></p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>{ optional: true }</code></td>
+<td>Return <code>null</code> instead of throwing <code>NG0201</code> when nothing provides it</td>
+</tr>
+<tr>
+<td><code>{ self: true }</code></td>
+<td>Look only at the current element's injector</td>
+</tr>
+<tr>
+<td><code>{ skipSelf: true }</code></td>
+<td>Start at the parent — how a nested component finds "the enclosing one of me" (a nested menu finding its parent menu)</td>
+</tr>
+<tr>
+<td><code>{ host: true }</code></td>
+<td>Stop the search at the host component's boundary</td>
+</tr>
+</tbody>
+</table>
+<h3 id="04-rxjs-for-angular-developers"><a href="../level-2/04-rxjs-essentials/">04 · RxJS for Angular Developers</a><a class="headerlink" href="#04-rxjs-for-angular-developers" title="Permanent link">&para;</a></h3>
+<p><em>The operators you'll use weekly</em></p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>map(fn)</code> / <code>filter(fn)</code></td>
+<td>Transform / drop values</td>
+</tr>
+<tr>
+<td><code>tap(fn)</code></td>
+<td>Side effect (logging) without changing values</td>
+</tr>
+<tr>
+<td><code>debounceTime(ms)</code></td>
+<td>Emit only after the source is quiet for <code>ms</code></td>
+</tr>
+<tr>
+<td><code>distinctUntilChanged()</code></td>
+<td>Drop a value equal to the previous one</td>
+</tr>
+<tr>
+<td><code>startWith(v)</code></td>
+<td>Emit <code>v</code> first</td>
+</tr>
+<tr>
+<td><code>combineLatest([a$, b$])</code></td>
+<td>Latest value of each, whenever any emits</td>
+</tr>
+<tr>
+<td><code>catchError(fn)</code></td>
+<td>Replace an error with another observable</td>
+</tr>
+<tr>
+<td><code>retry({ count, delay })</code></td>
+<td>Resubscribe after errors</td>
+</tr>
+<tr>
+<td><code>take(n)</code> / <code>takeUntil(x$)</code></td>
+<td>Complete after <code>n</code> values / when <code>x$</code> emits</td>
+</tr>
+<tr>
+<td><code>shareReplay({ bufferSize: 1, refCount: true })</code></td>
+<td>Share one execution between subscribers and replay the last value</td>
+</tr>
+</tbody>
+</table>
+<h3 id="05-signals-and-rxjs-interop"><a href="../level-2/05-signals-rxjs-interop/">05 · Signals and RxJS Interop</a><a class="headerlink" href="#05-signals-and-rxjs-interop" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Direction</th>
+<th>Typical use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>toSignal(obs$)</code></td>
+<td>Observable → Signal</td>
+<td>Show an HTTP or router stream in a template</td>
+</tr>
+<tr>
+<td><code>toObservable(sig)</code></td>
+<td>Signal → Observable</td>
+<td>Feed signal changes into <code>debounceTime</code>/<code>switchMap</code></td>
+</tr>
+<tr>
+<td><code>takeUntilDestroyed()</code></td>
+<td>Cleanup</td>
+<td>End a manual subscription with the component</td>
+</tr>
+<tr>
+<td><code>rxResource({ params, stream })</code></td>
+<td>Signal params → Observable loader → resource</td>
+<td>Async data with status (next lesson covers resources in depth)</td>
+</tr>
+<tr>
+<td><code>outputFromObservable(obs$)</code> / <code>outputToObservable(ref)</code></td>
+<td>Outputs ↔ Observables</td>
+<td>Expose or consume component outputs as streams</td>
+</tr>
+</tbody>
+</table>
+<h3 id="06-async-data-with-resource-httpresource"><a href="../level-2/06-resource-httpresource/">06 · Async Data with resource &amp; httpResource</a><a class="headerlink" href="#06-async-data-with-resource-httpresource" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>API</th>
+<th>Loader returns</th>
+<th>Package</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>resource({ params, loader })</code></td>
+<td>a <code>Promise</code></td>
+<td><code>@angular/core</code></td>
+</tr>
+<tr>
+<td><code>rxResource({ params, stream })</code></td>
+<td>an <code>Observable</code></td>
+<td><code>@angular/core/rxjs-interop</code></td>
+</tr>
+<tr>
+<td><code>httpResource(() =&gt; url or request)</code></td>
+<td>— it makes an <code>HttpClient</code> GET for you</td>
+<td><code>@angular/common/http</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="09-pipes-directives"><a href="../level-2/09-pipes-directives/">09 · Pipes &amp; Directives</a><a class="headerlink" href="#09-pipes-directives" title="Permanent link">&para;</a></h3>
+<p><em>Built-in pipes, with real output</em></p>
+<table>
+<thead>
+<tr>
+<th>Template</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>{{ when \| date }}</code></td>
+<td><code>Sep 28, 2026</code></td>
+</tr>
+<tr>
+<td><code>{{ when \| date: 'yyyy-MM-dd HH:mm' : 'UTC' }}</code></td>
+<td><code>2026-09-28 14:05</code></td>
+</tr>
+<tr>
+<td><code>{{ when \| date: 'fullDate' : 'UTC' }}</code></td>
+<td><code>Monday, September 28, 2026</code></td>
+</tr>
+<tr>
+<td><code>{{ price \| currency }}</code></td>
+<td><code>$1,234.50</code></td>
+</tr>
+<tr>
+<td><code>{{ price \| currency: 'EUR' }}</code></td>
+<td><code>€1,234.50</code></td>
+</tr>
+<tr>
+<td><code>{{ price \| currency: 'INR' : 'symbol' : '1.0-0' }}</code></td>
+<td><code>₹1,235</code></td>
+</tr>
+<tr>
+<td><code>{{ ratio \| percent: '1.1-1' }}</code></td>
+<td><code>45.7%</code></td>
+</tr>
+<tr>
+<td><code>{{ big \| number }}</code></td>
+<td><code>9,876,543.21</code></td>
+</tr>
+<tr>
+<td><code>{{ pi \| number: '1.2-2' }}</code></td>
+<td><code>3.14</code></td>
+</tr>
+<tr>
+<td><code>{{ 'the lord of the rings' \| titlecase }}</code></td>
+<td><code>The Lord Of The Rings</code></td>
+</tr>
+<tr>
+<td><code>{{ 'Angular' \| uppercase }}</code></td>
+<td><code>ANGULAR</code></td>
+</tr>
+<tr>
+<td><code>{{ ['a','b','c','d'] \| slice: 1 : 3 }}</code></td>
+<td><code>b,c</code></td>
+</tr>
+<tr>
+<td><code>{{ { a: 1 } \| json }}</code></td>
+<td><code>{ "a": 1 }</code></td>
+</tr>
+<tr>
+<td><code>@for (e of { zoe: 3, adam: 5 } \| keyvalue; ...)</code></td>
+<td><code>adam=5 zoe=3</code> (sorted by key)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="10-project-an-issue-tracker"><a href="../level-2/10-project-issue-tracker/">10 · Project — An Issue Tracker</a><a class="headerlink" href="#10-project-an-issue-tracker" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Lesson</th>
+<th>Where it shows up</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>02 Signal forms</td>
+<td><code>NewIssuePage</code>: schema validation, <code>submit()</code>, server error on <code>title</code></td>
+</tr>
+<tr>
+<td>03 DI</td>
+<td><code>Busy</code> service shared by an interceptor and the header</td>
+</tr>
+<tr>
+<td>04 RxJS</td>
+<td>the fake backend (<code>of</code>, <code>delay</code>, <code>timer</code>, <code>switchMap</code>), <code>finalize</code></td>
+</tr>
+<tr>
+<td>06 Resources</td>
+<td><code>httpResource</code> for the list and the detail page</td>
+</tr>
+<tr>
+<td>07 Router</td>
+<td>lazy routes, query params as inputs, <code>canDeactivate</code></td>
+</tr>
+<tr>
+<td>08 Interceptors</td>
+<td>busy counter, error mapping, the fake backend</td>
+</tr>
+<tr>
+<td>09 Pipes &amp; directives</td>
+<td><code>DatePipe</code> with explicit time zone, host bindings in <code>StatusBadge</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="level-3-advanced">Level 3 · Advanced<a class="headerlink" href="#level-3-advanced" title="Permanent link">&para;</a></h2>
+<h3 id="02-composition-projection-queries"><a href="../level-3/02-content-projection-queries/">02 · Composition: Projection &amp; Queries</a><a class="headerlink" href="#02-composition-projection-queries" title="Permanent link">&para;</a></h3>
+<p><em>Queries as signals</em></p>
+<table>
+<thead>
+<tr>
+<th>Query</th>
+<th>Looks in</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>viewChild(x)</code> / <code>viewChild.required(x)</code></td>
+<td>this component's own template</td>
+<td><code>Signal&lt;T \| undefined&gt;</code> / <code>Signal&lt;T&gt;</code></td>
+</tr>
+<tr>
+<td><code>viewChildren(x)</code></td>
+<td>own template</td>
+<td><code>Signal&lt;readonly T[]&gt;</code></td>
+</tr>
+<tr>
+<td><code>contentChild(x)</code> / <code>.required</code></td>
+<td>projected content</td>
+<td><code>Signal&lt;T \| undefined&gt;</code> / <code>Signal&lt;T&gt;</code></td>
+</tr>
+<tr>
+<td><code>contentChildren(x)</code></td>
+<td>projected content</td>
+<td><code>Signal&lt;readonly T[]&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="03-state-management-with-signals"><a href="../level-3/03-state-management/">03 · State Management with Signals</a><a class="headerlink" href="#03-state-management-with-signals" title="Permanent link">&para;</a></h3>
+<p><em>Where should this state live?</em></p>
+<table>
+<thead>
+<tr>
+<th>Kind of state</th>
+<th>Example</th>
+<th>Put it in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Local UI</td>
+<td>is the menu open, current tab</td>
+<td>a <code>signal</code> in the component</td>
+</tr>
+<tr>
+<td>Derived</td>
+<td>filtered list, totals, "can submit"</td>
+<td><code>computed</code> — never stored separately</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>search terms, filters, selected id, page</td>
+<td>route/query params (read as inputs)</td>
+</tr>
+<tr>
+<td>Server data</td>
+<td>issues, products, the current user</td>
+<td>a resource (<code>httpResource</code>) or a service that loads it</td>
+</tr>
+<tr>
+<td>Form draft</td>
+<td>fields being edited</td>
+<td>signal forms' model (Level 2)</td>
+</tr>
+<tr>
+<td>Shared client state</td>
+<td>cart, preferences, auth session</td>
+<td>a root service with private writable signals</td>
+</tr>
+<tr>
+<td>Feature-scoped shared state</td>
+<td>a wizard's steps</td>
+<td>a service provided on the feature's route or component</td>
+</tr>
+</tbody>
+</table>
+<h3 id="04-deferrable-views"><a href="../level-3/04-deferrable-views/">04 · Deferrable Views</a><a class="headerlink" href="#04-deferrable-views" title="Permanent link">&para;</a></h3>
+<p><em>Triggers</em></p>
+<table>
+<thead>
+<tr>
+<th>Trigger</th>
+<th>Fires when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>on idle</code> (the default)</td>
+<td>the browser is idle (<code>requestIdleCallback</code>)</td>
+</tr>
+<tr>
+<td><code>on viewport</code></td>
+<td>the placeholder (or a referenced element) enters the viewport</td>
+</tr>
+<tr>
+<td><code>on interaction</code></td>
+<td>the user clicks or presses a key on the placeholder or referenced element</td>
+</tr>
+<tr>
+<td><code>on hover</code></td>
+<td>pointer enters / focus moves to it</td>
+</tr>
+<tr>
+<td><code>on immediate</code></td>
+<td>right after the surrounding view renders</td>
+</tr>
+<tr>
+<td><code>on timer(2s)</code></td>
+<td>after a delay</td>
+</tr>
+<tr>
+<td><code>when condition</code></td>
+<td>an expression becomes truthy (checked with the template)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="05-performance"><a href="../level-3/05-performance/">05 · Performance</a><a class="headerlink" href="#05-performance" title="Permanent link">&para;</a></h3>
+<p><em>Keep rendering cheap</em></p>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A method call in a template doing real work (<code>{{ total(items) }}</code>)</td>
+<td><code>computed()</code> or a pure pipe — computed once per change, not per render</td>
+</tr>
+<tr>
+<td>List rows re-created after every fetch</td>
+<td><code>track</code> by a stable id (Level 1, lesson 05)</td>
+</tr>
+<tr>
+<td>Thousands of rows</td>
+<td>paginate, or virtual scrolling (<code>@angular/cdk/scrolling</code>'s <code>cdk-virtual-scroll-viewport</code>)</td>
+</tr>
+<tr>
+<td>An effect that writes signals and triggers more renders</td>
+<td>derive with <code>computed</code>/<code>linkedSignal</code> instead</td>
+</tr>
+<tr>
+<td>Hot <code>(scroll)</code>/<code>(mousemove)</code> handlers</td>
+<td>throttle, or listen outside templates and only write a signal when a value changes</td>
+</tr>
+<tr>
+<td>Heavy work on the main thread</td>
+<td><code>ng generate web-worker</code> and move it to a worker</td>
+</tr>
+</tbody>
+</table>
+<h3 id="06-ssr-prerendering-hydration"><a href="../level-3/06-ssr-hydration/">06 · SSR, Prerendering &amp; Hydration</a><a class="headerlink" href="#06-ssr-prerendering-hydration" title="Permanent link">&para;</a></h3>
+<p><em>Render modes per route</em></p>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>HTML produced</th>
+<th>Good for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Prerender</code> (SSG)</td>
+<td>once, at <code>ng build</code></td>
+<td>pages identical for every visitor: marketing, docs, product pages</td>
+</tr>
+<tr>
+<td><code>Server</code> (SSR)</td>
+<td>on each request</td>
+<td>pages that depend on the request: search, personalised or fast-changing data</td>
+</tr>
+<tr>
+<td><code>Client</code> (CSR)</td>
+<td>none — the empty shell</td>
+<td>pages that depend on browser-only state, or aren't worth rendering</td>
+</tr>
+</tbody>
+</table>
+<h3 id="07-testing-with-vitest-testbed"><a href="../level-3/07-testing/">07 · Testing with Vitest &amp; TestBed</a><a class="headerlink" href="#07-testing-with-vitest-testbed" title="Permanent link">&para;</a></h3>
+<p><em>What to test where</em></p>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Tool</th>
+<th>Tests</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pure logic</td>
+<td>plain Vitest, no TestBed</td>
+<td>pipes, validators, pure functions</td>
+</tr>
+<tr>
+<td>Services</td>
+<td><code>TestBed.inject</code></td>
+<td>stores, API clients (with <code>HttpTestingController</code>)</td>
+</tr>
+<tr>
+<td>Components</td>
+<td><code>TestBed.createComponent</code></td>
+<td>rendering, inputs, outputs, user interaction</td>
+</tr>
+<tr>
+<td>Routing</td>
+<td><code>RouterTestingHarness</code></td>
+<td>guards, resolvers, input binding (Level 2, lesson 07)</td>
+</tr>
+<tr>
+<td>Whole app in a browser</td>
+<td>Playwright / Cypress</td>
+<td>critical user journeys, end to end</td>
+</tr>
+</tbody>
+</table>
+<h3 id="10-project-a-server-rendered-product-catalog"><a href="../level-3/10-project-catalog/">10 · Project — A Server-Rendered Product Catalog</a><a class="headerlink" href="#10-project-a-server-rendered-product-catalog" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Lesson</th>
+<th>Where it shows up</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01 Change detection</td>
+<td>signals everywhere; nothing relies on zone-triggered updates</td>
+</tr>
+<tr>
+<td>02 Composition</td>
+<td>a reusable <code>ProductCard</code></td>
+</tr>
+<tr>
+<td>03 State</td>
+<td>a <code>Cart</code> service store with computed totals</td>
+</tr>
+<tr>
+<td>04 <code>@defer</code></td>
+<td>related products with <code>hydrate on viewport</code></td>
+</tr>
+<tr>
+<td>05 Performance</td>
+<td>per-route lazy chunks; budgets from the CLI defaults</td>
+</tr>
+<tr>
+<td>06 SSR</td>
+<td>three render modes, a real 404, the HTTP transfer cache, browser-only storage</td>
+</tr>
+<tr>
+<td>07 Testing</td>
+<td>component and service tests, including server-only behaviour</td>
+</tr>
+<tr>
+<td>09 Security</td>
+<td>allowed hosts for the server engine</td>
+</tr>
+</tbody>
+</table>
+<h2 id="level-4-master">Level 4 · Master<a class="headerlink" href="#level-4-master" title="Permanent link">&para;</a></h2>
+<h3 id="01-the-build-system-configurations"><a href="../level-4/01-build-system/">01 · The Build System &amp; Configurations</a><a class="headerlink" href="#01-the-build-system-configurations" title="Permanent link">&para;</a></h3>
+<p><em>Other options you will reach for</em></p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Use it for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>baseHref</code></td>
+<td>deploying under a sub-path (<code>/app/</code>) — Level 4, lesson 07</td>
+</tr>
+<tr>
+<td><code>outputHashing</code></td>
+<td><code>all</code> (default in production) for cache-busting file names</td>
+</tr>
+<tr>
+<td><code>sourceMap</code></td>
+<td><code>{ "scripts": true, "hidden": true }</code> to generate maps for error tracking without linking them from the bundle</td>
+</tr>
+<tr>
+<td><code>subresourceIntegrity</code></td>
+<td>add <code>integrity</code> hashes to script tags</td>
+</tr>
+<tr>
+<td><code>allowedCommonJsDependencies</code></td>
+<td>silence the CommonJS warning for a dependency you've accepted</td>
+</tr>
+<tr>
+<td><code>externalDependencies</code></td>
+<td>leave an import unbundled (import maps, micro-frontends)</td>
+</tr>
+<tr>
+<td><code>security.autoCsp</code></td>
+<td>generated strict CSP — Level 3, lesson 09</td>
+</tr>
+</tbody>
+</table>
+<h3 id="04-angular-elements-micro-frontends"><a href="../level-4/04-elements-microfrontends/">04 · Angular Elements &amp; Micro-Frontends</a><a class="headerlink" href="#04-angular-elements-micro-frontends" title="Permanent link">&para;</a></h3>
+<p><em>Using it from plain HTML</em></p>
+<table>
+<thead>
+<tr>
+<th>Angular</th>
+<th>Custom element</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>input()</code> / <code>model()</code> named <code>label</code></td>
+<td><strong>attribute</strong> <code>label</code> and <strong>property</strong> <code>label</code> (camelCase inputs map to dash-case attributes: <code>maxValue</code> → <code>max-value</code>)</td>
+</tr>
+<tr>
+<td><code>output()</code> / <code>model()</code> change named <code>valueChange</code></td>
+<td><strong>DOM <code>CustomEvent</code></strong> <code>valueChange</code>, payload in <code>event.detail</code></td>
+</tr>
+<tr>
+<td>component creation</td>
+<td>when the element is <strong>connected</strong> to the document</td>
+</tr>
+<tr>
+<td>component destruction</td>
+<td>shortly after the element is <strong>disconnected</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="05-upgrading-migrations"><a href="../level-4/05-upgrading-migrations/">05 · Upgrading &amp; Migrations</a><a class="headerlink" href="#05-upgrading-migrations" title="Permanent link">&para;</a></h3>
+<p><em>Modernisation migrations</em></p>
+<table>
+<thead>
+<tr>
+<th>Command (<code>ng generate @angular/core:&lt;name&gt;</code>)</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>standalone</code></td>
+<td>converts NgModule-based components to standalone, in stages</td>
+</tr>
+<tr>
+<td><code>control-flow</code></td>
+<td><code>*ngIf</code>/<code>*ngFor</code>/<code>[ngSwitch]</code> → <code>@if</code>/<code>@for</code>/<code>@switch</code></td>
+</tr>
+<tr>
+<td><code>inject</code></td>
+<td>constructor injection → <code>inject()</code></td>
+</tr>
+<tr>
+<td><code>signal-input-migration</code> (alias <code>signal-inputs</code>)</td>
+<td><code>@Input()</code> → <code>input()</code></td>
+</tr>
+<tr>
+<td><code>output-migration</code> (alias <code>outputs</code>)</td>
+<td><code>@Output()</code> + <code>EventEmitter</code> → <code>output()</code></td>
+</tr>
+<tr>
+<td><code>signal-queries-migration</code></td>
+<td><code>@ViewChild</code> &amp; co. → <code>viewChild()</code> &amp; co.</td>
+</tr>
+<tr>
+<td><code>signals</code></td>
+<td>runs the signal input, output and query migrations together</td>
+</tr>
+<tr>
+<td><code>route-lazy-loading</code></td>
+<td>eager <code>component:</code> routes → <code>loadComponent</code></td>
+</tr>
+<tr>
+<td><code>ngclass-to-class</code>, <code>ngstyle-to-style</code></td>
+<td><code>[ngClass]</code>/<code>[ngStyle]</code> → <code>[class.x]</code>/<code>[style.x]</code> bindings</td>
+</tr>
+<tr>
+<td><code>common-to-standalone</code></td>
+<td><code>CommonModule</code> imports → the individual directives/pipes used</td>
+</tr>
+<tr>
+<td><code>self-closing-tag</code></td>
+<td><code>&lt;app-x&gt;&lt;/app-x&gt;</code> → <code>&lt;app-x /&gt;</code></td>
+</tr>
+<tr>
+<td><code>cleanup-unused-imports</code></td>
+<td>removes unused entries from component <code>imports</code></td>
+</tr>
+<tr>
+<td><code>service</code></td>
+<td><code>@Injectable</code> → <code>@Service</code> where applicable</td>
+</tr>
+<tr>
+<td><code>router-testing-module-migration</code></td>
+<td>deprecated <code>RouterTestingModule</code> → <code>provideRouter()</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="07-deployment"><a href="../level-4/07-deployment/">07 · Deployment</a><a class="headerlink" href="#07-deployment" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>App type</th>
+<th>Output</th>
+<th>Host on</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Client-rendered (CSR)</td>
+<td><code>dist/&lt;app&gt;/browser/</code> — static files</td>
+<td>any static host or CDN: object storage + CDN, GitHub Pages, Netlify, Vercel, Firebase Hosting, Nginx</td>
+</tr>
+<tr>
+<td>Prerendered only</td>
+<td>static files, one <code>index.html</code> per route</td>
+<td>same as above</td>
+</tr>
+<tr>
+<td>Server-rendered routes</td>
+<td><code>browser/</code> + <code>server/server.mjs</code></td>
+<td>a Node runtime: a VM, a container platform, or a platform with an Angular SSR adapter</td>
+</tr>
+</tbody>
+</table>
+<h3 id="09-production-readiness-review"><a href="../level-4/09-production-readiness/">09 · Production Readiness Review</a><a class="headerlink" href="#09-production-readiness-review" title="Permanent link">&para;</a></h3>
+<p><em>Build &amp; delivery</em></p>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Production build is the default and is what gets deployed</td>
+<td><code>defaultConfiguration: "production"</code>; CI builds without <code>-c development</code> (L4-01)</td>
+</tr>
+<tr>
+<td>Budgets fail the build on regressions</td>
+<td><code>initial</code> budget with <code>maximumError</code>, set just above current size (L3-05)</td>
+</tr>
+<tr>
+<td>Environments hold no secrets</td>
+<td>review of <code>src/environments/*</code> (L4-01, L3-09)</td>
+</tr>
+<tr>
+<td>Deep links work on the real host</td>
+<td>reload <code>/some/inner/route</code> in production returns the app with 200 (L4-07)</td>
+</tr>
+<tr>
+<td>Cache headers: hashed files immutable, HTML revalidated</td>
+<td><code>curl -I</code> output (L4-07)</td>
+</tr>
+<tr>
+<td>Old chunks survive a deploy / chunk-load errors reload once</td>
+<td>deploy procedure, <code>withNavigationErrorHandler</code> (L4-07, L4-08)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>Go deeper with the full <a href="../">Angular Mastery Path</a> curriculum or test yourself with the <a href="../interview-questions/">interview questions</a>.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+  
+  <nav class="mp-related" aria-label="Related free courses">
+    <h2>Related free courses</h2>
+    <ul>
+      <li><a href="https://learnmasterypath.com/react-mastery-path/">React</a></li><li><a href="https://learnmasterypath.com/nextjs-mastery-path/">Next.js</a></li><li><a href="https://learnmasterypath.com/vue-mastery-path/">Vue.js</a></li><li><a href="https://learnmasterypath.com/html-css-mastery-path/">HTML & CSS</a></li><li><a href="https://learnmasterypath.com/tailwind-mastery-path/">Tailwind CSS</a></li>
+      <li><a href="https://learnmasterypath.com/">All 100+ courses &rarr;</a></li>
+    </ul>
+  </nav>
+  
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../interview-questions/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Interview Questions">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Interview Questions
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../level-1/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+  <div class="mp-foot">
+    <div class="mp-foot-inner">
+      <a class="mp-foot-brand" href="https://learnmasterypath.com/"><svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg><span>Mastery Path</span></a>
+      <nav class="mp-sitelinks" aria-label="Site and legal links">
+        <a href="https://learnmasterypath.com/">All courses</a>
+        <a href="https://learnmasterypath.com/about.html">About</a>
+        <a href="https://learnmasterypath.com/contact.html">Contact</a>
+        <a href="https://learnmasterypath.com/angular-mastery-path/privacy/">Privacy Policy</a>
+        <a href="https://learnmasterypath.com/terms.html">Terms</a>
+        <a href="https://learnmasterypath.com/angular-mastery-path/license/">License</a>
+        <a href="https://learnmasterypath.com/verify/">Verify a certificate</a>
+      </nav>
+    </div>
+    <p class="mp-license-note">
+      © 2026 Vinod Kumar Sigilipelli · Except where otherwise noted, lesson content is licensed under
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> and code examples under the
+      <a href="https://opensource.org/license/mit">MIT License</a>.
+    </p>
+  </div>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.path", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "navigation.indexes", "toc.follow", "content.code.copy", "content.code.annotate", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+        <script src="../javascripts/progress-tracker.js"></script>
+      
+        <script src="../javascripts/final-quiz.js"></script>
+      
+    
+  </body>
+</html>
